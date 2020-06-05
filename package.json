@@ -1,0 +1,41 @@
+{
+  "name": "visao-libertaria-api",
+  "version": "1.0.0",
+  "description": "API em NodeJS do portal Visão Libertária.",
+  "author": "Miguel Medeiros",
+  "email": "miguel@miguelmedeiros.com.br",
+  "url": "https://www.miguelmedeiros.com.br/",
+  "repository": "github:MiguelMedeiros/visao-libertaria-api",
+  "private": false,
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "examples": "nodemon examples/index.js"
+  },
+  "keywords": [
+    "api",
+    "miguel medeiros",
+    "peter turguniec",
+    "visão libertária",
+    "ancap",
+    "libertário",
+    "anarcocapitalismo",
+    "libertarianismo",
+    "libertário",
+    "npm",
+    "nodejs",
+    "javascript",
+    "package"
+  ],
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
