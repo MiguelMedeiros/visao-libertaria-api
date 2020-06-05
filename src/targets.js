@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const getAll = async (max, ini) => {
+const getAll = async (max, ini, proxy) => {
   try {
     if (!Number.isInteger(ini)) {
       ini = 0;
@@ -8,9 +8,12 @@ const getAll = async (max, ini) => {
     if (!Number.isInteger(max)) {
       max = 10;
     }
+    if (!proxy) {
+      proxy = "";
+    }
     return await axios
       .get(
-        `https://www.visaolibertaria.com/api/Target/ListAll?ini=${ini}&max=${max}`
+        `${proxy}https://www.visaolibertaria.com/api/Target/ListAll?ini=${ini}&max=${max}`
       )
       .then((res) => {
         return res.data;
@@ -20,7 +23,7 @@ const getAll = async (max, ini) => {
   }
 };
 
-const getList = async (max, ini) => {
+const getList = async (max, ini, proxy) => {
   try {
     if (!Number.isInteger(ini)) {
       ini = 0;
@@ -28,9 +31,12 @@ const getList = async (max, ini) => {
     if (!Number.isInteger(max)) {
       max = 10;
     }
+    if (!proxy) {
+      proxy = "";
+    }
     return await axios
       .get(
-        `https://www.visaolibertaria.com/api/Target/List?ini=${ini}&max=${max}`
+        `${proxy}https://www.visaolibertaria.com/api/Target/List?ini=${ini}&max=${max}`
       )
       .then((res) => {
         return res.data;
@@ -40,7 +46,7 @@ const getList = async (max, ini) => {
   }
 };
 
-const getCategory = async (theory, max, ini) => {
+const getCategory = async (theory, max, ini, proxy) => {
   try {
     if (!theory) {
       theory = "News";
@@ -51,9 +57,12 @@ const getCategory = async (theory, max, ini) => {
     if (!Number.isInteger(max)) {
       max = 10;
     }
+    if (!proxy) {
+      proxy = "";
+    }
     return await axios
       .get(
-        `https://www.visaolibertaria.com/api/Target/ByCategory?categ=${theory}&ini=${ini}&max=${max}`
+        `${proxy}https://www.visaolibertaria.com/api/Target/ByCategory?categ=${theory}&ini=${ini}&max=${max}`
       )
       .then((res) => {
         return res.data;
@@ -63,7 +72,7 @@ const getCategory = async (theory, max, ini) => {
   }
 };
 
-const getSearch = async (search, max, ini) => {
+const getSearch = async (search, max, ini, proxy) => {
   try {
     if (!search) {
       search = "";
@@ -74,9 +83,12 @@ const getSearch = async (search, max, ini) => {
     if (!Number.isInteger(max)) {
       max = 10;
     }
+    if (!proxy) {
+      proxy = "";
+    }
     return await axios
       .post(
-        `https://www.visaolibertaria.com/api/Target/Search?ini=${ini}&max=${max}`,
+        `${proxy}https://www.visaolibertaria.com/api/Target/Search?ini=${ini}&max=${max}`,
         {
           SearchString: search,
         }
