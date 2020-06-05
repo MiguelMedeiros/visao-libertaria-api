@@ -1,6 +1,14 @@
 **Visao Libertária - API NODEJS**
 ----
 
+[![NPM](https://img.shields.io/npm/v/visao-libertaria-api.svg?style=flat-square)](https://www.npmjs.com/package/visao-libertaria-api)
+[![NPM](https://img.shields.io/david/MiguelMedeiros/visao-libertaria-api.svg?style=flat-square)](https://david-dm.org/MiguelMedeiros/foxbit-api#info=dependencies)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/MiguelMedeiros/visao-libertaria-api)
+[![Known Vulnerabilities](https://snyk.io/test/github/MiguelMedeiros/visao-libertaria-api/badge.svg)](https://snyk.io/test/github/MiguelMedeiros/visao-libertaria-api)
+[![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FMiguelMedeiros%2Fvisao-libertaria-api)](https://twitter.com/_miguelmedeiros)
+[![Licence](https://img.shields.io/github/license/MiguelMedeiros/visao-libertaria-api)](https://github.com/MiguelMedeiros/visao-libertaria-api/blob/master/LICENSE)
+
+
 **Funções**
 ----
 
