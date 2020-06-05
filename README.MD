@@ -48,8 +48,6 @@ Retorna lista de vídeos.
     console.log(getVideosList);
   ```
 
-  ```
-
 * **Success Response:**
 
   * **Code:** 200 <br />
